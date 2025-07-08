@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  /* background-image: url("bgImg.png");
+  background-repeat: repeat; */
+  background: linear-gradient(to right, rgb(189, 25, 25) 50%, navy 50%);
+}
+html {
+  font-size: 62.5%;
+}
+h1 {
+  font-family: "Times New Roman";
+  font-size: 7rem;
+  text-align: center;
+  color: white;
+}
+.Wins {
+  display: none;
+}
+main {
+  display: flex;
+  justify-content: space-evenly;
+  width: 750px;
+  height: 600px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 2rem;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  box-shadow: 1rem 2rem 3rem;
+}
+.divider {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 3px;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.btns {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  gap: 135px;
+}
+button {
+  border-radius: 2rem;
+  background-color: aquamarine;
+  font-size: large;
+  width: 150px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background-color: black;
+  color: whitesmoke;
+}
+.btns div {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+main p {
+  text-align: center;
+}
+.plr1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.plr2 {
+  margin-left: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.bgPlr2 {
+  font-size: x-large;
+  letter-spacing: 2px;
+  font-family: "Oswald";
+  border-radius: 2rem;
+  color: aliceblue;
+  background-color: navy;
+  padding: 0 40px;
+}
+.bgPlr1 {
+  font-size: x-large;
+  font-family: "Oswald";
+  letter-spacing: 2px;
+  border-radius: 2rem;
+  color: aliceblue;
+  background-color: rgb(189, 25, 25);
+  padding: 0 40px;
+}
+.tscoreP1 {
+  font-size: xx-large;
+  color: white;
+  font-family: "Oswald";
+  letter-spacing: 2px;
+  border-radius: 2rem;
+}
+.tscoreP2 {
+  font-size: xx-large;
+  color: white;
+  font-family: "Oswald";
+  letter-spacing: 2px;
+  border-radius: 2rem;
+}
+.Hide {
+  color: black;
+  background-color: gray;
+  opacity: 0.5;
+}
+img {
+  margin-left: 25%;
+}

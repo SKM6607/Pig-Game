@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <link href="style.css" rel="stylesheet" />
+    <title>Pig Game</title>
+  </head>
+  <body>
+    <h1 class="Player Wins">Player Wins!</h1>
+    <div class="btns">
+      <button class="newGameBtn">🎮 NEW GAME</button>
+      <img class="diceLoad" id="imgs" src="One.png" width="75" height="75" />
+      <div>
+        <button class="rollDice">🎲 ROLL DICE</button>
+        <button class="holdScore">📤 HOLD</button>
+      </div>
+    </div>
+    <main>
+      <div class="divider"></div>
+      <section class="plr1">
+        <div class="tscoreP1 Hide">
+          <p>PLAYER 1</p>
+          <p class="trueScoreP1">0</p>
+        </div>
+        <div class="bgPlr1 Hide">
+          <p>CURRENT</p>
+          <p class="currentScoreP1">0</p>
+        </div>
+      </section>
+      <section class="plr2">
+        <div class="tscoreP2 Hide">
+          <p>PLAYER 2</p>
+          <p class="trueScoreP2">0</p>
+        </div>
+        <div class="bgPlr2 Hide">
+          <p>CURRENT</p>
+          <p class="currentScoreP2">0</p>
+        </div>
+      </section>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
