@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(to left, #f12711 0%, #f5af19 100%);
+  font-family: "Nunito", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+main {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  height: 60rem;
+  width: 75rem;
+  background: rgb(255, 255, 255, 0.5);
+  backdrop-filter: blur(200px);
+  border-radius: 2rem;
+  filter: blur();
+  box-shadow: 0 3rem 5rem;
+}
+.playerWindow {
+  flex: 50%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.playerName {
+  position: relative;
+  padding: 10rem 10rem 0 10rem;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 300;
+  align-items: center;
+  transition: all 1s;
+}
+.howToPlayModal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  z-index: 10;
+  height: 70vh;
+  width: 60vw;
+  padding: 3rem;
+  border-radius: 5rem;
+  word-wrap: break-word;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.howToPlayModal h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+.howToPlayModal pre {
+  font-size: x-large;
+}
+.howToPlayModal button {
+  z-index: 10;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: xx-large;
+  border: none;
+  color: #f12711;
+  background-color: white;
+  width: 70px;
+  border-radius: 2rem;
+}
+.howToPlayModalBG {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 100vh;
+  width: 100vw;
+  z-index: 5;
+  backdrop-filter: blur(1.5px);
+}
+.hide {
+  display: none;
+}
+.howToPlayModal button:hover {
+  background-color: #f5af19;
+  cursor: pointer;
+}
+.playerScore {
+  font-size: 6rem;
+  color: #f12711;
+  margin-bottom: 20rem;
+  font-weight: 200;
+}
+.currentWindow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: x-large;
+  background-color: #f12711;
+  width: 15rem;
+  height: 10rem;
+  border-radius: 2rem;
+  color: white;
+  opacity: 0.8;
+}
+.currentLabel {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.playerActive {
+  background-color: rgb(255, 255, 255, 0.5);
+}
+.playerActive .playerName {
+  font-weight: bolder;
+}
+.playerActive .playerScore {
+  font-weight: bolder;
+}
+.playerActive .currentWindow {
+  opacity: 1;
+}
+.howToPlay {
+  position: absolute;
+  top: 5%;
+  left: 95%;
+  font-size: xx-large;
+  width: 3rem;
+  border: none;
+  color: #f5af19;
+  border-radius: 1rem;
+}
+.howToPlay:hover {
+  cursor: pointer;
+  border-radius: 4rem;
+  color: #f12711;
+}
+.miscellaneous {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 1s;
+}
+.miscellaneous img {
+  width: 100px;
+  height: 100px;
+  border-radius: 1rem;
+  margin-bottom: 12rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+.btn {
+  text-transform: uppercase;
+  border: none;
+  background-color: rgb(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  font-size: large;
+  padding: 0.5rem 2rem;
+  border-radius: 2rem;
+  transform: all 1s;
+}
+.rollBtn {
+  margin-top: 12rem;
+}
+.holdBtn {
+  margin-top: 3rem;
+}
+.btn::first-letter {
+  font-size: xx-large;
+  display: inline-block;
+}
+.btn:focus {
+  outline: none;
+}
+.btn:hover {
+  cursor: pointer;
+}
+.playerWinner {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.playerWinner .playerName {
+  color: #f12711;
+  font-weight: bolder;
+}
